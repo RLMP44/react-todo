@@ -23,12 +23,13 @@ const App = () => {
 
   const deleteTodo = (index) => {
     console.log('deleting to-do...');
+    // uses index to find the todo to be deleted and sends an array without it to the changeTodos method
     changeTodos(todos.filter((todo, i) => i !== index));
   }
 
   const handleCheck = (index) => () => {
-    const target = todos.filter((todo, i) => todos.indexOf(todo) === index);
-    target[0].done = !target[0].done;
+    // uses index to find the todo to be changed and alters its done boolean if the index matches
+    changeTodos(todos.map((t, i) => i === index ? { title: t.title, done: !t.done } : t));
   }
 
   return (
