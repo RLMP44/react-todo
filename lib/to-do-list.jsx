@@ -27,7 +27,7 @@ const App = () => {
     changeTodos(todos.filter((todo, i) => i !== index));
   }
 
-  const handleCheck = (index) => () => {
+  const handleCheckChange = (index) => () => {
     // uses index to find the todo to be changed and alters its done boolean if the index matches
     changeTodos(todos.map((t, i) => i === index ? { title: t.title, done: !t.done } : t));
   }
@@ -40,7 +40,7 @@ const App = () => {
           {todos.map((todo, index) => (
             <li key={index} class="m-2 p-2 todo">
               <div class='d-flex todo-element'>
-                <input class='checkbox mx-2' type='checkbox' checked={todo.done} onChange={handleCheck(index)}/>
+                <input class='checkbox mx-2' type='checkbox' checked={todo.done} onChange={handleCheckChange(index)}/>
                 <span class={ todo.done ? 'text-decoration-line-through': 'text-black' }>
                   {todo.title}
                 </span>
