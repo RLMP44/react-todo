@@ -33,7 +33,7 @@ const App = () => {
         <ul>
           {todos.map((todo, index) => (
             <li key={index} class="m-2 p-2 todo">
-              <div>
+              <div class='d-flex todo-element'>
                 <input class='checkbox mx-2' type='checkbox' checked={todo.done} />
                 <span class={ todo.done ? 'text-decoration-line-through': 'text-black' }>
                   {todo.title}

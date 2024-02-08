@@ -26,7 +26,8 @@ body {
   border: 3px solid rgb(246,235,228);
 }
 .add-button:hover {
-  background-color: rgb(57,131,156);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgb(44,164,196);
   transition: 1s;
 }
 
@@ -49,6 +50,13 @@ ul {
 
 .todo:hover {
   box-shadow: 2px 2px 10px rgb(57,131,156);
+}
+
+.todo-element {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .delete-button svg:hover {
