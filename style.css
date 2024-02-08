@@ -44,4 +44,14 @@ ul {
   background-image: url('./post-it2.png');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 50px;
+}
+
+.todo:hover {
+  box-shadow: 2px 2px 10px rgb(57,131,156);
+}
+
+.delete-button svg:hover {
+  height: 24px;
+  width: 20px;
 }
