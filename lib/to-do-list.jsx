@@ -26,6 +26,11 @@ const App = () => {
     changeTodos(todos.filter((todo, i) => i !== index));
   }
 
+  const handleCheck = (index) => () => {
+    const target = todos.filter((todo, i) => todos.indexOf(todo) === index);
+    target[0].done = !target[0].done;
+  }
+
   return (
     <div id="app">
       <div className="container">
@@ -34,7 +39,7 @@ const App = () => {
           {todos.map((todo, index) => (
             <li key={index} class="m-2 p-2 todo">
               <div class='d-flex todo-element'>
-                <input class='checkbox mx-2' type='checkbox' checked={todo.done} />
+                <input class='checkbox mx-2' type='checkbox' checked={todo.done} onChange={handleCheck(index)}/>
                 <span class={ todo.done ? 'text-decoration-line-through': 'text-black' }>
                   {todo.title}
                 </span>
