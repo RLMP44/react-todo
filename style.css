@@ -18,16 +18,10 @@ body {
   align-items: start;
 }
 
-.btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: rgb(250,192,203);
-}
-
 .add-button {
   margin: 5px 10px;
   padding: 5px 20px;
-  border-radius: 20%;
+  border-radius: 1rem;
   background-color: rgb(44,164,196);
   border: 3px solid rgb(246,235,228);
 }
@@ -38,8 +32,16 @@ body {
 
 .form {
   background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(3px);
+  border-radius: 1rem;
 }
 
 ul {
   list-style-type: none;
+}
+
+.todo {
+  background-image: url('./post-it2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
