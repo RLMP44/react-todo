@@ -1,1 +1,24 @@
 /* Your customized CSS goes here */
+body {
+  /* background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+#root {
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: grid;
+  justify-items: center;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+}
+
+.btn-danger {
+  height: 2rem;
+  width: 2rem;
+}

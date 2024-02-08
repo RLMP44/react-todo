@@ -28,23 +28,25 @@ const App = () => {
 
   return (
     <div id="app">
-      <h1>To-Do List</h1>
-      <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>
-            <div>
-              <input type='checkbox' checked={todo.done} />
-                {todo.title}
-                <button class='btn btn-primary' type='button' onClick={() => deleteTodo(index)}><i class="fa-solid fa-trash"></i></button>
-            </div>
-          </li>
-        ))}
-      </ul>
-      <form>
-        <label htmlFor='todoTitle'>Title:</label>
-        <input type='text' id='todoTitle' value={title} onChange={handleTitleChange} placeholder='New to-do...' />
-        <button type='button' onClick={addTodo}>Add to-do</button>
-      </form>
+      <div className="container">
+        <h1>To-Do List</h1>
+        <ul>
+          {todos.map((todo, index) => (
+            <li key={index} class="m-2 p-2">
+              <div>
+                <input type='checkbox' checked={todo.done} />
+                  {todo.title}
+                  <button class='btn btn-danger' type='button' onClick={() => deleteTodo(index)}>X</button>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <form class='mb-5'>
+          <label htmlFor='todoTitle'>Title:</label>
+          <input type='text' id='todoTitle' value={title} onChange={handleTitleChange} placeholder='New to-do...' />
+          <button type='button' onClick={addTodo}>Add to-do</button>
+        </form>
+      </div>
     </div>
   );
 }
