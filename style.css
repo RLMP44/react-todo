@@ -18,7 +18,28 @@ body {
   align-items: start;
 }
 
-.btn-danger {
+.btn {
   height: 2rem;
   width: 2rem;
+  background-color: rgb(250,192,203);
+}
+
+.add-button {
+  margin: 5px 10px;
+  padding: 5px 20px;
+  border-radius: 20%;
+  background-color: rgb(44,164,196);
+  border: 3px solid rgb(246,235,228);
+}
+.add-button:hover {
+  background-color: rgb(57,131,156);
+  transition: 1s;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+ul {
+  list-style-type: none;
 }

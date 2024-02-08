@@ -34,17 +34,17 @@ const App = () => {
           {todos.map((todo, index) => (
             <li key={index} class="m-2 p-2">
               <div>
-                <input type='checkbox' checked={todo.done} />
+                <input class='checkbox mx-2' type='checkbox' checked={todo.done} />
                   {todo.title}
-                  <button class='btn btn-danger' type='button' onClick={() => deleteTodo(index)}>X</button>
+                  <button class='btn mx-2' type='button' onClick={() => deleteTodo(index)}>X</button>
               </div>
             </li>
           ))}
         </ul>
-        <form class='mb-5'>
-          <label htmlFor='todoTitle'>Title:</label>
+        <form class='form p-3'>
+          <label class='mx-2' htmlFor='todoTitle'>Title:</label>
           <input type='text' id='todoTitle' value={title} onChange={handleTitleChange} placeholder='New to-do...' />
-          <button type='button' onClick={addTodo}>Add to-do</button>
+          <button class='add-button' type='button' onClick={addTodo}>Add to-do</button>
         </form>
       </div>
     </div>
