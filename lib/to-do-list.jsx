@@ -1,4 +1,20 @@
+// import { useState, useEffect } from 'react';
+
 const App = () => {
+
+  // const storedTodos = JSON.parse(localStorage('todos'));
+  // // useState returns an array so we can save and destructure it by using const
+  // // and passing useState an empty array at first
+  // const [todos, changeTodos] = useState(storedTodos);
+
+  // // every time there is a change, the browser will track it
+  // // and change the array listed after the object
+  // useEffect(() => {
+  //   // localStorage expects a string so you must stringify your value first
+  //   localStorage.setItem('todos', JSON.stringify(todos));
+  //   console.log(todos);
+  // }, [todos])
+
   const [todos, changeTodos] = React.useState(
     [
       { title: "Code a to-do list", done: false },
@@ -13,6 +29,7 @@ const App = () => {
     // calls the method defined when the title array is defined
     setTitle(event.target.value);
   }
+  console.log(localStorage);
 
   const addTodo = () => {
     console.log('adding a to-do...');
