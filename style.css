@@ -1,6 +1,6 @@
 /* Your customized CSS goes here */
 body {
-  background-image: url('./background.jpg');
+  background-image: url('./lib/assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -49,7 +49,7 @@ ul {
 }
 
 .todo {
-  background-image: url('./post-it2.png');
+  background-image: url('./lib/assets/post-it2.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
