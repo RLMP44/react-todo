@@ -1,5 +1,3 @@
-// import { useState, useEffect } from 'react';
-
 const App = () => {
   const data = localStorage.getItem('todos');
   const storedTodos = JSON.parse(data);
