@@ -67,3 +67,10 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+
+.monthlyTodo {
+  background-image: url('./lib/assets/post-it.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
