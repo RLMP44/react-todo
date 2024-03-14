@@ -49,12 +49,13 @@ ul {
 }
 
 .todo {
-  background-image: url('./lib/assets/post-it2.png');
+  background-image: url('./lib/assets/post-it3.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
   max-width: 350px;
   text-wrap: wrap;
+  box-shadow: gray .2rem .2rem 3px;
 }
 
 .todo:hover {
@@ -73,6 +74,13 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+}
+
+.weeklyTodo {
+  background-image: url('./lib/assets/post-it2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
 }
 
 @media (min-width: 100px) and (max-width: 860px) {
