@@ -74,3 +74,14 @@ ul {
   background-repeat: no-repeat;
   color: white;
 }
+
+@media (min-width: 100px) and (max-width: 860px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    margin: 1rem;
+  }
+}

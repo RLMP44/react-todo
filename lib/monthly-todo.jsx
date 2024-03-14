@@ -50,7 +50,7 @@ const App = () => {
   return (
     <div id="app">
       <div className="container">
-        <h1>Monthly To-Do List</h1>
+        <h1>Monthly To-Dos</h1>
         <ul>
           {monthlyTodos.map((monthlyTodo, index) => (
             <li key={index} class="m-2 p-2 todo monthlyTodo">
