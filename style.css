@@ -15,6 +15,7 @@ body {
   justify-content: center;
   align-items: start;
   padding: 3rem 0rem;
+  gap: 1rem;
 }
 
 .add-button {
@@ -49,7 +50,7 @@ ul {
 }
 
 .todo {
-  background-image: url('./lib/assets/post-it3.png');
+  background-image: url('./lib/assets/post-it4.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
@@ -83,10 +84,33 @@ ul {
   color: black;
 }
 
-@media (min-width: 100px) and (max-width: 860px) {
+@media (min-width: 100px) and (max-width: 900px) {
   .body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .form {
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1249px) {
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form {
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .body {
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .form {
