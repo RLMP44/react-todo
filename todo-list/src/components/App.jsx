@@ -54,7 +54,25 @@ function App() {
   return (
     <div id="app">
       <List
-        target='todos'
+        target='todo'
+        todos={todos}
+        check={handleCheckChange}
+        delete={deleteTodo}
+        change={handleTitleChange}
+        add={addTodo}
+        title={title}
+      />
+      <List
+        target='weeklyTodo'
+        todos={todos}
+        check={handleCheckChange}
+        delete={deleteTodo}
+        change={handleTitleChange}
+        add={addTodo}
+        title={title}
+      />
+      <List
+        target='monthlyTodo'
         todos={todos}
         check={handleCheckChange}
         delete={deleteTodo}

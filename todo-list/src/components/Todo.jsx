@@ -1,6 +1,6 @@
 function Todo(props) {
   return (
-    <li key={props.index} className="m-2 p-2 todo">
+    <li key={props.index} className={`m-2 p-2 ${props.target}`}>
       <div className='d-flex todo-element'>
         <input className='checkbox mx-2' type='checkbox' checked={props.done} onChange={props.check(props.index)}/>
         <span className={ props.done ? 'text-decoration-line-through': 'text-black' }>

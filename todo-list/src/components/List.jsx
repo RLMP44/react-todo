@@ -5,10 +5,11 @@ import Title from './Title'
 function List(props) {
   return (
     <div className="container">
-      <Title />
+      <Title target={props.target}/>
       <ul>
         {props.todos.map((todo, index) => (
           <Todo
+            target={props.target}
             key={index}
             title={todo.title}
             done={todo.done}
