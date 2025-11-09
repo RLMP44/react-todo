@@ -1,12 +1,8 @@
-// import { useState } from 'react'
 import '../App.css'
 import React from 'react'
-import Form from './Form'
-import Todo from './Todo'
+import List from './List'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   const data = localStorage.getItem('todos');
   const storedTodos = JSON.parse(data);
 
@@ -57,26 +53,15 @@ function App() {
 
   return (
     <div id="app">
-      <div className="container">
-        <h1>Daily To-Dos</h1>
-        <ul>
-          {todos.map((todo, index) => (
-            <Todo
-              key={index}
-              title={todo.title}
-              done={todo.done}
-              index={index}
-              change={handleCheckChange}
-              delete={deleteTodo}
-            />
-          ))}
-        </ul>
-        <Form
-          title={title}
-          change={handleTitleChange}
-          add={addTodo}
-        />
-      </div>
+      <List
+        target='todos'
+        todos={todos}
+        check={handleCheckChange}
+        delete={deleteTodo}
+        change={handleTitleChange}
+        add={addTodo}
+        title={title}
+      />
     </div>
   );
 }
