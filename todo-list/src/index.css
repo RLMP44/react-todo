@@ -1,6 +1,5 @@
-/* Your customized CSS goes here */
 body {
-  background-image: url('./lib/assets/background.jpg');
+  background-image: url('./assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -50,7 +49,7 @@ ul {
 }
 
 .todo {
-  background-image: url('./lib/assets/post-it4.png');
+  background-image: url('./assets/post-it4.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
@@ -71,21 +70,21 @@ ul {
 }
 
 .monthlyTodo {
-  background-image: url('./lib/assets/post-it.png');
+  background-image: url('./assets/post-it.png');
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
 }
 
 .weeklyTodo {
-  background-image: url('./lib/assets/post-it2.png');
+  background-image: url('./assets/post-it2.png');
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
 }
 
 @media (min-width: 100px) and (max-width: 900px) {
-  .body {
+  #app {
     display: grid;
     grid-template-rows: 1fr;
   }
@@ -96,7 +95,7 @@ ul {
 }
 
 @media (min-width: 901px) and (max-width: 1249px) {
-  .body {
+  #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -107,7 +106,7 @@ ul {
 }
 
 @media (min-width: 1250px) {
-  .body {
+  #app {
     display: grid;
     grid-row-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
