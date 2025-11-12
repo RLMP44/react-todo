@@ -1,3 +1,5 @@
+import React from 'react'
+
 const App = () => {
   const data = localStorage.getItem('todos');
   const storedTodos = JSON.parse(data);
@@ -73,8 +75,3 @@ const App = () => {
     </div>
   );
 }
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
